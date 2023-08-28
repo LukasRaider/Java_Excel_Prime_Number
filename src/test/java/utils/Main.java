@@ -40,11 +40,11 @@ public class Main {
 		for (int i = 1; i < Numrow; i++) {
 			int value = excel_Utils.getCellData(i,1);
 			
-			if (value == -1)
+			if (value != -1)
 			{
-				continue;
+				excel_Utils.getPrimeNumber(value);
 			}
-			excel_Utils.getPrimeNumber(value);		
+			
 	
 		}
 		

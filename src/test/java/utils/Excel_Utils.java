@@ -23,7 +23,7 @@ public class Excel_Utils {
 		}
 	}
 	// funkce pro vraceni hodnoty ze zadané políčka
-	public static int getCellData(int rowNum,int colNum) throws IOException {
+	public int getCellData(int rowNum,int colNum) throws IOException {
 		
 		DataFormatter formatter = new DataFormatter();
 		String value = formatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum));
@@ -38,7 +38,7 @@ public class Excel_Utils {
 	}
 	
 	// funkce na řádky z excelu
-	public static int getRowCount()
+	public int getRowCount()
 	{
 	
 		int rowCount = sheet.getPhysicalNumberOfRows();
@@ -46,7 +46,7 @@ public class Excel_Utils {
 	}
 	
 	// funkce na primarní čísla
-	public static void getPrimeNumber(int val)
+	public void getPrimeNumber(int val)
 	{
 		
 		 int i,m=0,flag=0;      
